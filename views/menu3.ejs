@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mahadevi Ahara | Premium Food Delivery</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <style>
+      :root {
+        --primary: #6c5ce7;
+        --secondary: #a8a4e6;
+        --accent: #ff7675;
+        --dark: #2d3436;
+        --light: #f8f9fa;
+        --gradient: linear-gradient(135deg, #6c5ce7 0%, #a8a4e6 100%);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Inter", sans-serif;
+      }
+
+      body {
+        background: var(--light);
+        overflow-x: hidden;
+      }
+
+      .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Premium Header */
+      .header {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        padding: 1rem;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        animation: smoothHeader 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      @keyframes smoothHeader {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 1.8rem;
+        font-weight: 700;
+        background: var(--gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .cart-wrapper {
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .cart-icon {
+        font-size: 1.6rem;
+        color: var(--dark);
+        transition: all 0.3s ease;
+        cursor: pointer;
+      }
+
+      .cart-count {
+        background: var(--accent);
+        color: white;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+        font-size: 0.8rem;
+        font-weight: 600;
+        position: absolute;
+        top: -8px;
+        right: -8px;
+        animation: pulse 2s infinite;
+      }
+
+      /* Animated Categories */
+      .categories {
+        display: flex;
+        gap: 1.5rem;
+        margin-top: 100px;
+        margin-bottom: 3rem;
+        padding: 1rem 0;
+        animation: slideIn 0.8s 0.2s ease-out forwards;
+        opacity: 0;
+      }
+
+      @keyframes slideIn {
+        from {
+          transform: translateX(-50px);
+          opacity: 0;
+        }
+        to {
+          transform: translateX(0);
+          opacity: 1;
+        }
+      }
+
+      .category-btn {
+        background: transparent;
+        border: 2px solid var(--primary);
+        padding: 0.8rem 2rem;
+        border-radius: 50px;
+        cursor: pointer;
+        transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        position: relative;
+        overflow: hidden;
+        font-weight: 500;
+        color: var(--dark);
+      }
+
+      .category-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--gradient);
+        z-index: -1;
+        transform: scaleX(0);
+        transform-origin: right;
+        transition: transform 0.4s ease;
+      }
+
+      .category-btn:hover::before {
+        transform: scaleX(1);
+        transform-origin: left;
+      }
+
+      .category-btn.active {
+        background: var(--gradient);
+        color: white;
+        border-color: transparent;
+        box-shadow: 0 8px 25px rgba(108, 92, 231, 0.3);
+      }
+
+      /* Luxury Menu Items */
+      .menu-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        gap: 2.5rem;
+        padding: 2rem 0;
+      }
+
+      .menu-item {
+        background: white;
+        border-radius: 20px;
+        overflow: hidden;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+        transition: all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1);
+        cursor: pointer;
+        position: relative;
+        opacity: 0;
+        transform: translateY(30px);
+        animation: itemEntrance 0.6s ease forwards;
+      }
+
+      @keyframes itemEntrance {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .menu-item:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+      .menu-item:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+      .menu-item:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+      .menu-item:nth-child(4) {
+        animation-delay: 0.8s;
+      }
+      .menu-item:nth-child(5) {
+        animation-delay: 1s;
+      }
+      .menu-item:nth-child(6) {
+        animation-delay: 1.2s;
+      }
+
+      .menu-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+      }
+
+      .menu-item::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: 0.5s;
+      }
+
+      .menu-item:hover::before {
+        left: 100%;
+      }
+
+      .item-image {
+        width: 100%;
+        height: 250px;
+        object-fit: cover;
+        clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        transition: all 0.4s ease;
+      }
+
+      .menu-item:hover .item-image {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+
+      .item-info {
+        padding: 2rem;
+        position: relative;
+      }
+
+      .item-title {
+        font-size: 1.4rem;
+        margin-bottom: 0.8rem;
+        color: var(--dark);
+      }
+
+      .item-description {
+        font-size: 0.95rem;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+      }
+
+      .item-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .item-price {
+        font-size: 1.4rem;
+        font-weight: 700;
+        background: var(--gradient);
+        --webkit-background-clip: text;
+        --webkit-text-fill-color: transparent;
+      }
+
+      .add-btn {
+        background: var(--gradient);
+        color: white;
+        border: none;
+        padding: 0.8rem 1.8rem;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .add-btn::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.4),
+          transparent
+        );
+        transition: 0.5s;
+      }
+
+      .add-btn:hover::after {
+        left: 100%;
+      }
+
+      /* Premium Badge */
+      .premium-badge {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(5px);
+        padding: 0.5rem 1.2rem;
+        border-radius: 30px;
+        font-size: 0.8rem;
+        font-weight: 700;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        animation: float 3s ease-in-out infinite;
+        z-index: 1000;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      /* Scroll Progress */
+      .scroll-progress {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 3px;
+        background: var(--gradient);
+        z-index: 9999;
+        transition: width 0.3s ease-out;
+      }
+
+      /* Mobile Optimization */
+      @media (max-width: 768px) {
+        .menu-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .categories {
+          flex-wrap: nowrap;
+          overflow-x: auto;
+          padding-bottom: 1rem;
+        }
+      }
+
+      /* Loading Animation */
+      .loading {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        border: 3px solid rgba(108, 92, 231, 0.3);
+        border-radius: 50%;
+        border-top-color: var(--primary);
+        animation: spin 1s ease-in-out infinite;
+      }
+
+      @keyframes spin {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .category-filter {
+        margin: 20px 0;
+        display: flex;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      .category-filter a {
+        padding: 10px 20px;
+        border-radius: 25px;
+        background: #f0f0f0;
+        text-decoration: none;
+        color: #333;
+        transition: all 0.3s ease;
+      }
+
+      .category-filter a.active {
+        background: #6c5ce7;
+        color: white;
+      }
+
+      .category-filter a:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header class="header">
+      <nav class="nav container">
+        <div class="logo">Mahadevi Ahara</div>
+        <div class="cart-wrapper">
+          <i class="fas fa-shopping-bag cart-icon"></i>
+          <div class="cart-count">3</div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+      <div class="categories">
+            <a href="/menu?category=all"><button class="category-btn <%= activeCategory === 'all' ? 'active' : '' %>">All Menu</button></a>
+<a href="/menu?category=seafood"><button class="category-btn <%= activeCategory === 'seafood' ? 'active' : '' %>">Seafood</button></a>
+<a href="/menu?category=vegetarian"><button class="category-btn <%= activeCategory === 'vegetarian' ? 'active' : '' %>">Vegetarian</button></a>
+<a href="/menu?category=appetizers"><button class="category-btn <%= activeCategory === 'appetizers' ? 'active' : '' %>">Appetizers</button></a>
+
+<a href="/menu?category=poultry"><button class="category-btn <%= activeCategory === 'poultry' ? 'active' : '' %>">Poultry</button></a>
+<a href="/menu?category=soups"><button class="category-btn <%= activeCategory === 'soups' ? 'active' : '' %>">Soups</button></a>
+
+
+            
+        </div>
+
+
+      <div class="menu-grid">
+        <% for (let item of foodItems){ %>
+
+        <div class="menu-item">
+          <div class="premium-badge">🌟 <%= item.category %></div>
+          <img
+            src="<%= item.image %>"
+            class="item-image"
+            alt="<%= item.name %>"
+          />
+          <div class="item-info">
+            <h3 class="item-title"><%= item.name %></h3>
+            <p class="item-description"><%= item.description %></p>
+            <div class="item-footer">
+              <span class="item-price">$<%= item.price %></span>
+              <button class="add-btn">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <% } %>
+      </div>
+    </div>
+
+    <script>
+      // Scroll Progress Indicator
+      window.onscroll = function () {
+        let winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+        let height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById("scrollProgress").style.width = scrolled + "%";
+      };
+
+      // Add hover tilt effect to menu items
+      document.querySelectorAll(".menu-item").forEach((item) => {
+        item.addEventListener("mousemove", (e) => {
+          const rect = item.getBoundingClientRect();
+          const x = e.clientX - rect.left;
+          const y = e.clientY - rect.top;
+          item.style.transform = `translateY(-10px) perspective(1000px) rotateX(${
+            (y - rect.height / 2) / 20
+          }deg) rotateY(${-(x - rect.width / 2) / 20}deg)`;
+        });
+
+        item.addEventListener("mouseleave", () => {
+          item.style.transform = "translateY(-10px)";
+        });
+      });
+
+      // Add cart interaction
+      let cartCount = 3;
+      document.querySelectorAll(".add-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          cartCount++;
+          document.querySelector(".cart-count").textContent = cartCount;
+          btn.classList.add("clicked");
+          setTimeout(() => btn.classList.remove("clicked"), 300);
+        });
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,405 @@
+{
+    "menuItems": [
+      {
+        "id": 1,
+        "name": "Truffle Lobster Pasta",
+        "description": "Fresh Maine lobster with black truffle cream sauce over handmade tagliatelle",
+        "price": 89.99,
+        "category": "Seafood",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRktsGRH4fo20kdwSf4_jWVQQRdwIikQvxMGw&s",
+        "badge": "Chef's Special"
+      },
+      {
+        "id": 2,
+        "name": "Golden Saffron Risotto",
+        "description": "Carnaroli rice with Iranian saffron and 24k gold leaf",
+        "price": 69.99,
+        "category": "Vegetarian",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLrsEnBBZRw5HREawcqtrbJ6ozyOv5enwBPw&s"
+      },
+      {
+        "id": 3,
+        "name": "Crispy Skin Salmon",
+        "description": "Sous-vide Norwegian salmon with miso glaze and wasabi foam",
+        "price": 49.99,
+        "category": "Seafood",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSew6NGl5gy7ocNMVYg8y_OsHEiOzWaJnvGuw&s"
+      },
+      {
+        "id": 4,
+        "name": "Duck Confit",
+        "description": "French-style slow-cooked duck leg with cherry gastrique",
+        "price": 59.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?duck-confit"
+      },
+      {
+        "id": 5,
+        "name": "Truffle Mushroom Ravioli",
+        "description": "House-made pasta filled with wild mushrooms and truffle butter sauce",
+        "price": 39.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?ravioli"
+      },
+      {
+        "id": 6,
+        "name": "Scallop Ceviche",
+        "description": "Fresh sea scallops with yuzu marinade and avocado mousse",
+        "price": 44.99,
+        "category": "Appetizers",
+        "image": "https://source.unsplash.com/random/800x600?ceviche"
+      },
+      {
+        "id": 7,
+        "name": "Vegetable Tempura",
+        "description": "Seasonal vegetables in light sesame batter with tentsuyu dip",
+        "price": 29.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?tempura"
+      },
+      {
+        "id": 8,
+        "name": "Chicken Satay",
+        "description": "Grilled free-range chicken skewers with peanut sauce",
+        "price": 34.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?satay"
+      },
+      {
+        "id": 9,
+        "name": "Lobster Bisque",
+        "description": "Velvety bisque with cognac cream and lobster caviar",
+        "price": 27.99,
+        "category": "Soups",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsNBZR-W0KbxijyjvyrhTyTMU78GRISq9TMA&s"
+      },
+      {
+        "id": 10,
+        "name": "Tuna Tartare",
+        "description": "Sushi-grade tuna with quail yolk and nori chips",
+        "price": 47.99,
+        "category": "Appetizers",
+        "image": "https://source.unsplash.com/random/800x600?tuna-tartare"
+      },
+      {
+        "id": 11,
+        "name": "Vegetable Paella",
+        "description": "Saffron rice with seasonal vegetables and smoked paprika",
+        "price": 42.99,
+        "category": "Vegetarian",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRl6mMh4K-6UyT5Yg__my8rRxjUM2lXHgjPWw&s"
+      },
+      {
+        "id": 12,
+        "name": "Crab Cakes",
+        "description": "Jumbo lump crab cakes with remoulade sauce",
+        "price": 54.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?crab-cakes"
+      },
+      {
+        "id": 13,
+        "name": "Duck Breast",
+        "description": "Pan-seared duck breast with blackberry reduction",
+        "price": 64.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?duck-breast"
+      },
+      {
+        "id": 14,
+        "name": "Vegetable Lasagna",
+        "description": "Layered pasta with roasted vegetables and béchamel sauce",
+        "price": 37.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?lasagna"
+      },
+      {
+        "id": 15,
+        "name": "Grilled Octopus",
+        "description": "Mediterranean-style octopus with lemon-herb potatoes",
+        "price": 49.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?octopus"
+      },
+      {
+        "id": 16,
+        "name": "Chicken Piccata",
+        "description": "Lemon-butter chicken with capers and angel hair pasta",
+        "price": 39.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?chicken-piccata"
+      },
+      {
+        "id": 17,
+        "name": "Vegetable Sushi Platter",
+        "description": "Assorted vegetarian sushi with matcha salt",
+        "price": 44.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?sushi"
+      },
+      {
+        "id": 18,
+        "name": "Shrimp Scampi",
+        "description": "Garlic butter shrimp with linguine and chili flakes",
+        "price": 47.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?shrimp-scampi"
+      },
+      {
+        "id": 19,
+        "name": "Ratatouille",
+        "description": "Provençal vegetable stew with herbed polenta",
+        "price": 34.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?ratatouille"
+      },
+      {
+        "id": 20,
+        "name": "Chicken Tikka Masala",
+        "description": "Tandoori chicken in creamy tomato curry",
+        "price": 42.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?tikka-masala"
+      },
+      {
+        "id": 21,
+        "name": "Lobster Roll",
+        "description": "New England-style lobster salad in brioche bun",
+        "price": 59.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?lobster-roll"
+      },
+      {
+        "id": 22,
+        "name": "Vegetable Curry",
+        "description": "Thai green curry with coconut milk and jasmine rice",
+        "price": 37.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?vegetable-curry"
+      },
+      {
+        "id": 23,
+        "name": "Duck Ramen",
+        "description": "Rich broth with confit duck and ramen noodles",
+        "price": 44.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?ramen"
+      },
+      {
+        "id": 24,
+        "name": "Crab Linguine",
+        "description": "Blue crab meat in garlic white wine sauce",
+        "price": 54.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?crab-linguine"
+      },
+      {
+        "id": 25,
+        "name": "Stuffed Portobello",
+        "description": "Grilled mushroom with quinoa and goat cheese",
+        "price": 32.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?stuffed-mushroom"
+      },
+      {
+        "id": 26,
+        "name": "Chicken Paillard",
+        "description": "Lemon-herb chicken with arugula salad",
+        "price": 39.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?chicken-paillard"
+      },
+      {
+        "id": 27,
+        "name": "Seafood Tower",
+        "description": "Oysters, shrimp, crab claws, and lobster with mignonette",
+        "price": 129.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?seafood-tower"
+      },
+      {
+        "id": 28,
+        "name": "Vegetable Tagine",
+        "description": "Moroccan stew with preserved lemons and couscous",
+        "price": 37.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?tagine"
+      },
+      {
+        "id": 29,
+        "name": "Duck Spring Rolls",
+        "description": "Crispy rolls with hoisin-peanut dipping sauce",
+        "price": 29.99,
+        "category": "Appetizers",
+        "image": "https://source.unsplash.com/random/800x600?spring-rolls"
+      },
+      {
+        "id": 30,
+        "name": "Grilled Branzino",
+        "description": "Whole Mediterranean sea bass with herb oil",
+        "price": 64.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?branzino"
+      },
+      {
+        "id": 31,
+        "name": "Vegetable Pho",
+        "description": "Vietnamese noodle soup with mushroom broth",
+        "price": 34.99,
+        "category": "Soups",
+        "image": "https://source.unsplash.com/random/800x600?pho"
+      },
+      {
+        "id": 32,
+        "name": "Chicken Parmigiana",
+        "description": "Crispy chicken with marinara and mozzarella",
+        "price": 44.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?chicken-parm"
+      },
+      {
+        "id": 33,
+        "name": "Scallop Risotto",
+        "description": "Seared scallops over saffron risotto",
+        "price": 57.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?scallop-risotto"
+      },
+      {
+        "id": 34,
+        "name": "Eggplant Parmigiana",
+        "description": "Layered eggplant with tomato sauce and cheeses",
+        "price": 32.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?eggplant-parm"
+      },
+      {
+        "id": 35,
+        "name": "Duck Fried Rice",
+        "description": "Wok-tossed rice with confit duck and vegetables",
+        "price": 39.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?fried-rice"
+      },
+      {
+        "id": 36,
+        "name": "Clam Chowder",
+        "description": "New England-style soup with oyster crackers",
+        "price": 27.99,
+        "category": "Soups",
+        "image": "https://source.unsplash.com/random/800x600?clam-chowder"
+      },
+      {
+        "id": 37,
+        "name": "Vegetable Kebab",
+        "description": "Grilled seasonal vegetables with mint yogurt",
+        "price": 29.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?kebab"
+      },
+      {
+        "id": 38,
+        "name": "Chicken Cordon Bleu",
+        "description": "Stuffed chicken with ham and Swiss cheese",
+        "price": 47.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?cordon-bleu"
+      },
+      {
+        "id": 39,
+        "name": "Lobster Mac & Cheese",
+        "description": "Lobster meat in three-cheese sauce with panko crust",
+        "price": 69.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?lobster-mac"
+      },
+      {
+        "id": 40,
+        "name": "Vegetable Moussaka",
+        "description": "Greek layered eggplant and potato casserole",
+        "price": 34.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?moussaka"
+      },
+      {
+        "id": 41,
+        "name": "Chicken Shawarma",
+        "description": "Middle Eastern-spiced chicken with garlic sauce",
+        "price": 39.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?shawarma"
+      },
+      {
+        "id": 42,
+        "name": "Shrimp Tacos",
+        "description": "Grilled shrimp with mango salsa in corn tortillas",
+        "price": 44.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?shrimp-tacos"
+      },
+      {
+        "id": 43,
+        "name": "Vegetable Dumplings",
+        "description": "Steamed dumplings with ginger-soy dipping sauce",
+        "price": 27.99,
+        "category": "Appetizers",
+        "image": "https://source.unsplash.com/random/800x600?dumplings"
+      },
+      {
+        "id": 44,
+        "name": "Duck Pizza",
+        "description": "Smoked duck breast with fig and gorgonzola",
+        "price": 49.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?duck-pizza"
+      },
+      {
+        "id": 45,
+        "name": "Seafood Paella",
+        "description": "Traditional Spanish rice with shrimp and mussels",
+        "price": 74.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?seafood-paella"
+      },
+      {
+        "id": 46,
+        "name": "Vegetable Stir-Fry",
+        "description": "Wok-tossed vegetables with tofu and sesame",
+        "price": 32.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?stir-fry"
+      },
+      {
+        "id": 47,
+        "name": "Chicken Satay Pizza",
+        "description": "Thai-inspired pizza with peanut sauce",
+        "price": 44.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?satay-pizza"
+      },
+      {
+        "id": 48,
+        "name": "Crab Fried Rice",
+        "description": "Jasmine rice with blue crab and Thai basil",
+        "price": 49.99,
+        "category": "Seafood",
+        "image": "https://source.unsplash.com/random/800x600?crab-fried-rice"
+      },
+      {
+        "id": 49,
+        "name": "Vegetable Pad Thai",
+        "description": "Rice noodles with tofu and tamarind sauce",
+        "price": 37.99,
+        "category": "Vegetarian",
+        "image": "https://source.unsplash.com/random/800x600?pad-thai"
+      },
+      {
+        "id": 50,
+        "name": "Duck Confit Salad",
+        "description": "Mixed greens with crispy duck and pomegranate",
+        "price": 54.99,
+        "category": "Poultry",
+        "image": "https://source.unsplash.com/random/800x600?duck-salad"
+      }
+    ]
+  }

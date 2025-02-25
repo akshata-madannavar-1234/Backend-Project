@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Delivery - Menu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            background: #f8f8f8;
+            color: #333;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        h1 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #ff5722;
+        }
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .menu-item {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            transition: 0.3s;
+        }
+        .menu-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+        .menu-item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .menu-item h2 {
+            font-size: 22px;
+            margin: 15px 0;
+        }
+        .menu-item p {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+        .menu-item .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #ff5722;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 10px;
+            font-size: 16px;
+            color: white;
+            background: #ff5722;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background: #ff3d00;
+        }
+    </style>
+</head>
+<body>
+    <h1>Our Delicious Menu</h1>
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/400x300/?burger" alt="Burger">
+            <h2>Cheese Burger</h2>
+            <p>Juicy grilled burger with melted cheese.</p>
+            <p class="price">$8.99</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/400x300/?pizza" alt="Pizza">
+            <h2>Margherita Pizza</h2>
+            <p>Classic cheese & tomato pizza.</p>
+            <p class="price">$12.99</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="menu-item">
+            <img src="https://source.unsplash.com/400x300/?pasta" alt="Pasta">
+            <h2>Creamy Alfredo Pasta</h2>
+            <p>Delicious creamy Alfredo sauce with pasta.</p>
+            <p class="price">$10.99</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+</body>
+</html>
